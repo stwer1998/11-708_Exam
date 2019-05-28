@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "ShareFile";
+}
+
+<h2>ShareFile</h2>
+
+<form asp-controller="File" asp-action="ShareFile" method="post" enctype="multipart/form-data">
+    <h5>Короткое описание</h5>
+    <input type="text" name="shortdescription" /><br />
+    <h5>Полное описание</h5>
+    <textarea name="description" cols="60" style="height:200px" >
+
+    </textarea><br />
+    <input type="file" name="file" />
+    <input type="submit" value="Загрузить"/>
+</form>
+
